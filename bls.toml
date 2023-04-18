@@ -1,0 +1,16 @@
+name = "test-forking-2"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "test-forking-2_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "test-forking-2.wasm"
+command = "npm run build:release"
